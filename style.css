@@ -1,0 +1,96 @@
+/* h1 é título da página */
+/* p é o parágrafo */
+/* a são os links magnéticos */
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Define essa fonte para o body */
+  text-align: center; /* Centraliza todo o texto do body */
+  margin: 0;  /* Zerado o margin do body cola imagem sem espaçamento no centro */
+}
+
+#hero { /* tem essa # por causa que lá no projeto tem o seletor id hero */
+  width: 592px; /* width é a largura no projeto está com o valor de 592 pixels */
+  margin: 0 auto 72px;  /* O primeiro valor ele vai aplicar para o TOP (Cima) e o segundo valor ele vai aplicar pras laterais e a terceira é pra baixo */
+  /* Tem que ser 0 no primeiro porque quero a imagem colada  */
+
+
+}
+
+#hero img { /* Identificar da imagem do hero */
+
+  /* O Espaçamento foi feito da seguinte forma */
+  /* Da imagem até o H1 (Título) 72 pixels */
+  /* Do (Título) até o Texto  32 pixels */
+  /* Do H1 até o footer (Linha e o Fale conosco) 72 pixels-> */
+
+  margin-bottom: 72px; /* O Margem embaixo 72 pixels */
+
+  /* NÃO ESQUEÇA QUE PRA CADA ESPAÇAMENTO VOCÊ PRECISA BUSCAR O ITEM QUE VOCÊ QUER ALINHAR E DEFINIR ELE */
+
+
+}
+
+h1 { /* A fonte do h1 vem em negrito por padrão */
+  font-family: 'Inter', sans-serif; /* Essas fontes foram copiadas das regras CSS para especificar as famílias */
+  /* Todas as fontes da página serão mudadas para essas fontes */
+  font-size: 49px; /* Tamanho da letra (fonte) */
+  line-height: 56px; /* Altura da Linha */
+  font-weight: normal; /* Aqui você define o estilo da fonte, se não colocar nada ela vem em negrito */
+  margin-bottom:32px ; /* O Margem embaixo 32 pixels */
+}
+
+h1 span { /* Definiu que no título do texto h1 a parte que tiver em span vai estar em negrito em negrito (BOLD) */
+  font-weight: bold;
+}
+
+p,footer { /* Todas as tags p vão receber essa fonte e receber essa cor */
+  font-family: 'Open Sans', sans-serif;
+  color: #7D7987; /* Corrigido para minúsculo */
+  font-size: 14px;
+  line-height: 28px; /* Corrigido para adicionar hífen */
+}
+
+#footer {
+
+    margin-bottom: 33px; /* Espaçamento de 33 pixels do footer até embaixo na pagina*/
+  }
+
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+
+span, a { /* No meu projeto HTML onde eu tinha marcado span vai ficar pintado de dourado e os links magnéticos também */
+  color: #FF9900; /* Corrigido para minúsculo */
+}
+
+
+#footer a + a /* Dentro do footer vai ter que pegar o a (link magnético) que tem anterior da ele outro a (outro link magnético) */
+
+{ /*Para saber a distância entre o fale com conosco e instagram basta clicar no quadrado do
+  Figma e medir a largura dele   */
+
+  margin-left: 48px; /* Margem a direita 48 pixels */ /* Pegue o segundo a e ajuste para a esquerda */
+
+
+}
+
+.line { /* Procura o elemento linha no HTML e define os parâmetros */ /* Pontos (.) São classes e # são identificadores*/
+
+/* Todas as dimensões desse projeto estão no Figma do projeto */
+
+width: 568px; /* Largura da linha */
+height: 0px; /* Altura da Linha */
+margin: 0 auto 8px; /* Temos que definir a margem para poder pegar a linha inteira da página, a diferença entre o texto e a linha é de 8 pixels */
+
+border: 1px solid #ECEFF2; /* Define a cor da linha */
+
+}
+
+#balls { /* Posicionar as bolas na tela, são as primeiras imagens que colocamos no ínicio do projeto */
+
+  position: fixed; /* Posição Fixada na tela,novo local de posicionamento */
+  bottom: 0px; /* Deixar o elemento fixo na tela, na parte debaixo*/
+  right: 0px; /* Para a direita da página */
+
+}
